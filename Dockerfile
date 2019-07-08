@@ -103,7 +103,7 @@ RUN set -x \
     && echo "unms ALL=(ALL) NOPASSWD: /usr/sbin/nginx -s *" >> /etc/sudoers \
     && echo "unms ALL=(ALL) NOPASSWD:SETENV: /copy-user-certs.sh reload" >> /etc/sudoers
 
-ADD https://github.com/Ubiquiti-App/UNMS/archive/v0.13.0.tar.gz /tmp/unms.tar.gz
+ADD https://github.com/Ubiquiti-App/UNMS/blob/master/unms-0.14.0.tar.gz /tmp/unms.tar.gz
 
 RUN cd /tmp \
     && tar -xzf unms.tar.gz \
